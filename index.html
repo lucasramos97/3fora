@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js"></script>
+    <title>3º Fora</title>
+  </head>
+  <body onload="init()">
+    <div id="form">
+      <h1>Eae vamo sair?</h1>
+      <h2>(Programadoras lindas clicam sim 😌)</h2>
+      <div class="flex-row">
+        <div class="box">
+          <button onclick="actionYes()" onmouseover="showText()" onmouseleave="hideText()">SIM</button>
+          <p class="text">There's only one right answer 😎</p>
+        </div>
+        <div class="box">
+          <h1 id="emote" style="margin-top: 5px;">🙂</h1>
+        </div>
+        <div class="box">
+          <button id="move" onclick="runaway(this)" onmouseover="runaway(this)">NÃO</button>
+        </div>
+      </div>
+    </div>
+    <div id="div-answer">
+      <h1 id="text-answer"></h1>
+    </div>
+  </body>
+</html>
